@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Basic Todo List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Todo List</h1>
+
+<div class="input-area">
+<input type="text" id="taskInput" placeholder="Enter task">
+<button onclick="addTask()">Add</button>
+</div>
+
+<input type="text" id="searchInput" placeholder="Search task">
+
+<div class="filters">
+<button onclick="setFilter('all')">All</button>
+<button onclick="setFilter('active')">Active</button>
+<button onclick="setFilter('completed')">Completed</button>
+</div>
+
+<ul id="taskList"></ul>
+
+<button class="clear" onclick="clearCompleted()">Clear Completed</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
